@@ -18,7 +18,7 @@ a dice parsing package by Quinn Stevens
 
 ### Usage
 
-To use tian, simply install it using `pip install tian`, and then use the `roll()` command, passing as a string the roll you want to make.
+To use tian, simply install it using `pip install tian`, and then use the `roll()` command, passing as a string the roll you want to make, and the function will return the result of the roll as an integer.
 
 ### Notation
 
