@@ -8,6 +8,26 @@ and return an integer total"""
 import re
 import random
 
+class Roll(object):
+  def __init__(self, text=None):
+    """Initialises the roll object.
+
+    Starts out with a value of zero and no dice rolled.
+    """
+    self.value = 0
+    self.results = []
+    if text == None:
+      self.number = 1
+      self.sides = 6
+      self.modifiers = []
+    else:
+      self.inputs = text.split(' ')
+      self.number, self.sides = re.split('d|D', self.inputs[0])
+      self.number = int(self.number)
+      self.sides = int(self.sides)
+      self.modifiers = self.inputs[1:]
+
+
 
 class Roller(object):
 
